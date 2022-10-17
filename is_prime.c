@@ -1,6 +1,6 @@
 
 
-int czypierwsza(int a)
+int is_prime(int a)
 {
     int j;
     for(j=2; j*j<=a; j++)
@@ -24,8 +24,8 @@ main()
 
         scanf("%d", &n);
 
-        if (czypierwsza(n)==1) printf("%d jest pierwsza\n", n);
-        else printf("%d jest zlozona\n", n);
+        if (is_prime(n)==1) printf("%d is prime\n", n);
+        else printf("%d is composite\n", n);
     }
 
     return 0;
